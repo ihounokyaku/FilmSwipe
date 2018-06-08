@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8D9FECD6BB21A4A7E2D635 /* Pods_FilmSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DC8C7D71530BC8831F76DB /* Pods_FilmSwipe.framework */; };
 		C40A0A6A20C9B8D000C3B930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */; };
 		C40A0A6C20C9B8D000C3B930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A0A6B20C9B8D000C3B930 /* ViewController.swift */; };
 		C40A0A6F20C9B8D000C3B930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A6D20C9B8D000C3B930 /* Main.storyboard */; };
 		C40A0A7120C9B8D000C3B930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A7020C9B8D000C3B930 /* Assets.xcassets */; };
 		C40A0A7420C9B8D000C3B930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */; };
+		C471691920CA0FE100EDB26C /* SwipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C471691820CA0FE100EDB26C /* SwipeView.xib */; };
+		C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471691A20CA104C00EDB26C /* SwipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51DC8C7D71530BC8831F76DB /* Pods_FilmSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD23CD9E806CCC55F9EC790 /* Pods-FilmSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmSwipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe.release.xcconfig"; sourceTree = "<group>"; };
 		C40A0A6620C9B8D000C3B930 /* FilmSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C40A0A6B20C9B8D000C3B930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		C40A0A7020C9B8D000C3B930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C40A0A7320C9B8D000C3B930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C40A0A7520C9B8D000C3B930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C471691820CA0FE100EDB26C /* SwipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeView.xib; sourceTree = "<group>"; };
+		C471691A20CA104C00EDB26C /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		E68553FB99806B38CCE56528 /* Pods-FilmSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmSwipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8D9FECD6BB21A4A7E2D635 /* Pods_FilmSwipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B81C831360CB6C6E75D33E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51DC8C7D71530BC8831F76DB /* Pods_FilmSwipe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		451A55A0CAAC16A7C6F4EFFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E68553FB99806B38CCE56528 /* Pods-FilmSwipe.debug.xcconfig */,
+				7BD23CD9E806CCC55F9EC790 /* Pods-FilmSwipe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C40A0A5D20C9B8D000C3B930 = {
 			isa = PBXGroup;
 			children = (
 				C40A0A6820C9B8D000C3B930 /* FilmSwipe */,
 				C40A0A6720C9B8D000C3B930 /* Products */,
+				451A55A0CAAC16A7C6F4EFFF /* Pods */,
+				1B81C831360CB6C6E75D33E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +85,8 @@
 				C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */,
 				C40A0A6B20C9B8D000C3B930 /* ViewController.swift */,
 				C40A0A6D20C9B8D000C3B930 /* Main.storyboard */,
+				C471691A20CA104C00EDB26C /* SwipeView.swift */,
+				C471691820CA0FE100EDB26C /* SwipeView.xib */,
 				C40A0A7020C9B8D000C3B930 /* Assets.xcassets */,
 				C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */,
 				C40A0A7520C9B8D000C3B930 /* Info.plist */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C40A0A7820C9B8D000C3B930 /* Build configuration list for PBXNativeTarget "FilmSwipe" */;
 			buildPhases = (
+				7DCBD88C0265AFB4360C45B8 /* [CP] Check Pods Manifest.lock */,
 				C40A0A6220C9B8D000C3B930 /* Sources */,
 				C40A0A6320C9B8D000C3B930 /* Frameworks */,
 				C40A0A6420C9B8D000C3B930 /* Resources */,
+				61C84A62AA4FA2870229499D /* [CP] Embed Pods Frameworks */,
+				E9DD9333BA191879F7CDB53C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40A0A7420C9B8D000C3B930 /* LaunchScreen.storyboard in Resources */,
+				C471691920CA0FE100EDB26C /* SwipeView.xib in Resources */,
 				C40A0A7120C9B8D000C3B930 /* Assets.xcassets in Resources */,
 				C40A0A6F20C9B8D000C3B930 /* Main.storyboard in Resources */,
 			);
@@ -131,11 +165,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61C84A62AA4FA2870229499D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DCBD88C0265AFB4360C45B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FilmSwipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DD9333BA191879F7CDB53C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C40A0A6220C9B8D000C3B930 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */,
 				C40A0A6C20C9B8D000C3B930 /* ViewController.swift in Sources */,
 				C40A0A6A20C9B8D000C3B930 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +363,7 @@
 		};
 		C40A0A7920C9B8D000C3B930 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68553FB99806B38CCE56528 /* Pods-FilmSwipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +379,7 @@
 		};
 		C40A0A7A20C9B8D000C3B930 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD23CD9E806CCC55F9EC790 /* Pods-FilmSwipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
