@@ -11,7 +11,6 @@ import UIKit
 class SwipeView: UIView {
     
     @IBOutlet var contentView: UIView!
-    @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var posterImage: UIImageView!
     
     override init(frame: CGRect) {
