@@ -1,0 +1,6 @@
+framework module Pods_FilmSwipe {
+  umbrella header "Pods-FilmSwipe-umbrella.h"
+
+  export *
+  module * { export * }
+}
