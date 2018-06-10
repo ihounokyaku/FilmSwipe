@@ -15,6 +15,8 @@
 		C40A0A7420C9B8D000C3B930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */; };
 		C471691920CA0FE100EDB26C /* SwipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C471691820CA0FE100EDB26C /* SwipeView.xib */; };
 		C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471691A20CA104C00EDB26C /* SwipeView.swift */; };
+		C4C4404920CCAC7800ED62C6 /* ExpandableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C4404820CCAC7800ED62C6 /* ExpandableView.xib */; };
+		C4C4404B20CCB35000ED62C6 /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4404A20CCB35000ED62C6 /* ExpandableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C40A0A7520C9B8D000C3B930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C471691820CA0FE100EDB26C /* SwipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeView.xib; sourceTree = "<group>"; };
 		C471691A20CA104C00EDB26C /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		C4C4404820CCAC7800ED62C6 /* ExpandableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandableView.xib; sourceTree = "<group>"; };
+		C4C4404A20CCB35000ED62C6 /* ExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
 		E68553FB99806B38CCE56528 /* Pods-FilmSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmSwipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,13 +89,23 @@
 				C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */,
 				C40A0A6B20C9B8D000C3B930 /* ViewController.swift */,
 				C40A0A6D20C9B8D000C3B930 /* Main.storyboard */,
-				C471691A20CA104C00EDB26C /* SwipeView.swift */,
-				C471691820CA0FE100EDB26C /* SwipeView.xib */,
+				C4C4404720CCA90C00ED62C6 /* Custom Views */,
 				C40A0A7020C9B8D000C3B930 /* Assets.xcassets */,
 				C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */,
 				C40A0A7520C9B8D000C3B930 /* Info.plist */,
 			);
 			path = FilmSwipe;
+			sourceTree = "<group>";
+		};
+		C4C4404720CCA90C00ED62C6 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				C471691A20CA104C00EDB26C /* SwipeView.swift */,
+				C471691820CA0FE100EDB26C /* SwipeView.xib */,
+				C4C4404A20CCB35000ED62C6 /* ExpandableView.swift */,
+				C4C4404820CCAC7800ED62C6 /* ExpandableView.xib */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,7 @@
 				C40A0A7420C9B8D000C3B930 /* LaunchScreen.storyboard in Resources */,
 				C471691920CA0FE100EDB26C /* SwipeView.xib in Resources */,
 				C40A0A7120C9B8D000C3B930 /* Assets.xcassets in Resources */,
+				C4C4404920CCAC7800ED62C6 /* ExpandableView.xib in Resources */,
 				C40A0A6F20C9B8D000C3B930 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */,
+				C4C4404B20CCB35000ED62C6 /* ExpandableView.swift in Sources */,
 				C40A0A6C20C9B8D000C3B930 /* ViewController.swift in Sources */,
 				C40A0A6A20C9B8D000C3B930 /* AppDelegate.swift in Sources */,
 			);

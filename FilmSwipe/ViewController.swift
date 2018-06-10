@@ -11,16 +11,19 @@ import Koloda
 import pop
 
 class ViewController: UIViewController {
-   
+    //MARK: - ==========IBOUTLETS===========
     @IBOutlet weak var kolodaView: KolodaView!
+    @IBOutlet weak var expandView: ExpandableView!
     
+    //MARK: - ==========VARIABLES===========
     var images = [#imageLiteral(resourceName: "cat"),#imageLiteral(resourceName: "cat2"),#imageLiteral(resourceName: "cat3"),#imageLiteral(resourceName: "cat4"),#imageLiteral(resourceName: "cat5")]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.kolodaView.delegate = self
         self.kolodaView.dataSource = self
-        
+        self.expandView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
