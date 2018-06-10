@@ -43,17 +43,30 @@ class ExpandableView: UIView {
 
     
     @IBAction func upPressed(_ sender: Any) {
+        
+        //MARK: enable/disable swipeView
+        if let vc = self.delegate {
+            vc.kolodaView.isUserInteractionEnabled = self.contentView.frame.height != self.originalHeight
+            print(vc.kolodaView.isFirstResponder)
+            vc.kolodaView.isHidden = self.contentView.frame.height == self.originalHeight
+        }
+        
+        
         //MARK: Get new height
         let vcHeight = self.delegate != nil ? self.delegate!.view.frame.height : self.originalHeight + 100
         let newHeight = contentView.frame.height == self.originalHeight ? vcHeight - 200 : self.originalHeight
         print("original height \(self.originalHeight) new height = \(newHeight)")
         let heightDifference = newHeight - self.contentView.frame.height
         
+        
+        //MARK: Resize View
         UIView.animate(withDuration: 0.5, animations: {
             self.contentView.frame = CGRect(x: self.contentView.frame.origin.x, y: self.contentView.frame.origin.y - heightDifference, width: self.contentView.frame.width, height:newHeight)
         }) { _ in
             self.upDownButton.setTitle("Down", for: .normal)
         }
+        
+        
     }
     
     
