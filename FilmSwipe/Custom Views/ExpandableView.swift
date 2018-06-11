@@ -44,31 +44,25 @@ class ExpandableView: UIView {
     
     @IBAction func upPressed(_ sender: Any) {
         
-        //MARK: enable/disable swipeView
-        if let vc = self.delegate {
-            vc.kolodaView.isUserInteractionEnabled = self.contentView.frame.height != self.originalHeight
-            print(vc.kolodaView.isFirstResponder)
-            vc.kolodaView.isHidden = self.contentView.frame.height == self.originalHeight
-        }
-        
-        
+        guard let vc = self.delegate else {return}
+
         //MARK: Get new height
-        let vcHeight = self.delegate != nil ? self.delegate!.view.frame.height : self.originalHeight + 100
-        let newHeight = contentView.frame.height == self.originalHeight ? vcHeight - 200 : self.originalHeight
-        print("original height \(self.originalHeight) new height = \(newHeight)")
-        let heightDifference = newHeight - self.contentView.frame.height
-        
+        let newHeight = contentView.frame.height == self.originalHeight ? vc.view.frame.height - 200 : self.originalHeight
+        let heightDifference = newHeight - vc.expandView.frame.height
+        let buttonLabel = contentView.frame.height == self.originalHeight ? "Down" : "Up"
         
         //MARK: Resize View
         UIView.animate(withDuration: 0.5, animations: {
-            self.contentView.frame = CGRect(x: self.contentView.frame.origin.x, y: self.contentView.frame.origin.y - heightDifference, width: self.contentView.frame.width, height:newHeight)
+            vc.expandView.frame = CGRect(x: vc.expandView.frame.origin.x, y: vc.expandView.frame.origin.y - heightDifference, width: vc.expandView.frame.width, height:newHeight)
         }) { _ in
-            self.upDownButton.setTitle("Down", for: .normal)
+            self.upDownButton.setTitle(buttonLabel, for: .normal)
         }
         
+        //MARK: enable/disable swipe
+        vc.kolodaView.isUserInteractionEnabled = vc.expandView.frame.height == self.originalHeight
         
     }
-    
+
     
     
 

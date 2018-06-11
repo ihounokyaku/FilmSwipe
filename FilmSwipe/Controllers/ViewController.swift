@@ -10,15 +10,21 @@ import UIKit
 import Koloda
 import pop
 
-class ViewController: UIViewController {
+class ViewController: NavSubview {
     //MARK: - ==========IBOUTLETS===========
+    //MARK: - ==VIEWS==
     @IBOutlet weak var kolodaView: KolodaView!
     @IBOutlet weak var expandView: ExpandableView!
     
+    //MARK: - ==BUTTONS==
+    
+    
+    
     //MARK: - ==========VARIABLES===========
-    var images = [#imageLiteral(resourceName: "cat"),#imageLiteral(resourceName: "cat2"),#imageLiteral(resourceName: "cat3"),#imageLiteral(resourceName: "cat4"),#imageLiteral(resourceName: "cat5")]
+
+
     
-    
+    //MARK: - ==========SETUP===========
     override func viewDidLoad() {
         super.viewDidLoad()
         self.kolodaView.delegate = self
@@ -27,13 +33,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
-
+    
+    
+    
+    //MARK: - =========UPDATE UI ===========
+    
 }
+    
+    
+
+
+
+
+
+//MARK: - ==========KolodaView===========
 
 extension ViewController : KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
@@ -69,7 +83,7 @@ extension ViewController : KolodaViewDelegate, KolodaViewDataSource {
         case .down:
             print("down")
         }
-        self.images.append(self.images[index])
+        //self.images.append(self.images[index])
     }
     
 }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AF8D9FECD6BB21A4A7E2D635 /* Pods_FilmSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DC8C7D71530BC8831F76DB /* Pods_FilmSwipe.framework */; };
+		C40588DC20CE2A9C00923AF0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40588DB20CE2A9C00923AF0 /* DataManager.swift */; };
+		C40588DE20CE307800923AF0 /* LikedMoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40588DD20CE307800923AF0 /* LikedMoviesVC.swift */; };
+		C40588E020CE57A800923AF0 /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40588DF20CE57A800923AF0 /* NavContainer.swift */; };
+		C40588E220CE588200923AF0 /* NavSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40588E120CE588200923AF0 /* NavSubview.swift */; };
 		C40A0A6A20C9B8D000C3B930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */; };
 		C40A0A6C20C9B8D000C3B930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A0A6B20C9B8D000C3B930 /* ViewController.swift */; };
 		C40A0A6F20C9B8D000C3B930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A6D20C9B8D000C3B930 /* Main.storyboard */; };
@@ -15,6 +19,9 @@
 		C40A0A7420C9B8D000C3B930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */; };
 		C471691920CA0FE100EDB26C /* SwipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C471691820CA0FE100EDB26C /* SwipeView.xib */; };
 		C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471691A20CA104C00EDB26C /* SwipeView.swift */; };
+		C4818EAE20CEAE9A00EC4C4E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4818EAD20CEAE9A00EC4C4E /* Extensions.swift */; };
+		C4BA56B320CDCEBD00BD39DA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA56B220CDCEBD00BD39DA /* Movie.swift */; };
+		C4BA56B920CDDE8D00BD39DA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA56B820CDDE8D00BD39DA /* Enums.swift */; };
 		C4C4404920CCAC7800ED62C6 /* ExpandableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C4404820CCAC7800ED62C6 /* ExpandableView.xib */; };
 		C4C4404B20CCB35000ED62C6 /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C4404A20CCB35000ED62C6 /* ExpandableView.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +29,10 @@
 /* Begin PBXFileReference section */
 		51DC8C7D71530BC8831F76DB /* Pods_FilmSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD23CD9E806CCC55F9EC790 /* Pods-FilmSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmSwipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe.release.xcconfig"; sourceTree = "<group>"; };
+		C40588DB20CE2A9C00923AF0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C40588DD20CE307800923AF0 /* LikedMoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedMoviesVC.swift; sourceTree = "<group>"; };
+		C40588DF20CE57A800923AF0 /* NavContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainer.swift; sourceTree = "<group>"; };
+		C40588E120CE588200923AF0 /* NavSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavSubview.swift; sourceTree = "<group>"; };
 		C40A0A6620C9B8D000C3B930 /* FilmSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C40A0A6B20C9B8D000C3B930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +42,9 @@
 		C40A0A7520C9B8D000C3B930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C471691820CA0FE100EDB26C /* SwipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeView.xib; sourceTree = "<group>"; };
 		C471691A20CA104C00EDB26C /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		C4818EAD20CEAE9A00EC4C4E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C4BA56B220CDCEBD00BD39DA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C4BA56B820CDDE8D00BD39DA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		C4C4404820CCAC7800ED62C6 /* ExpandableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandableView.xib; sourceTree = "<group>"; };
 		C4C4404A20CCB35000ED62C6 /* ExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
 		E68553FB99806B38CCE56528 /* Pods-FilmSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmSwipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmSwipe/Pods-FilmSwipe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,14 +101,45 @@
 			isa = PBXGroup;
 			children = (
 				C40A0A6920C9B8D000C3B930 /* AppDelegate.swift */,
-				C40A0A6B20C9B8D000C3B930 /* ViewController.swift */,
-				C40A0A6D20C9B8D000C3B930 /* Main.storyboard */,
+				C4BA56B720CDDE7400BD39DA /* Global Variables */,
+				C4BA56B420CDCEC500BD39DA /* Data Model */,
+				C4BA56BA20CDDFC500BD39DA /* Controllers */,
 				C4C4404720CCA90C00ED62C6 /* Custom Views */,
 				C40A0A7020C9B8D000C3B930 /* Assets.xcassets */,
 				C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */,
+				C40A0A6D20C9B8D000C3B930 /* Main.storyboard */,
 				C40A0A7520C9B8D000C3B930 /* Info.plist */,
 			);
 			path = FilmSwipe;
+			sourceTree = "<group>";
+		};
+		C4BA56B420CDCEC500BD39DA /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA56B220CDCEBD00BD39DA /* Movie.swift */,
+				C40588DB20CE2A9C00923AF0 /* DataManager.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		C4BA56B720CDDE7400BD39DA /* Global Variables */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA56B820CDDE8D00BD39DA /* Enums.swift */,
+				C4818EAD20CEAE9A00EC4C4E /* Extensions.swift */,
+			);
+			path = "Global Variables";
+			sourceTree = "<group>";
+		};
+		C4BA56BA20CDDFC500BD39DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C40588DF20CE57A800923AF0 /* NavContainer.swift */,
+				C40588E120CE588200923AF0 /* NavSubview.swift */,
+				C40A0A6B20C9B8D000C3B930 /* ViewController.swift */,
+				C40588DD20CE307800923AF0 /* LikedMoviesVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C4C4404720CCA90C00ED62C6 /* Custom Views */ = {
@@ -248,7 +293,14 @@
 				C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */,
 				C4C4404B20CCB35000ED62C6 /* ExpandableView.swift in Sources */,
 				C40A0A6C20C9B8D000C3B930 /* ViewController.swift in Sources */,
+				C40588DE20CE307800923AF0 /* LikedMoviesVC.swift in Sources */,
+				C40588DC20CE2A9C00923AF0 /* DataManager.swift in Sources */,
+				C40588E020CE57A800923AF0 /* NavContainer.swift in Sources */,
 				C40A0A6A20C9B8D000C3B930 /* AppDelegate.swift in Sources */,
+				C4BA56B920CDDE8D00BD39DA /* Enums.swift in Sources */,
+				C4BA56B320CDCEBD00BD39DA /* Movie.swift in Sources */,
+				C4818EAE20CEAE9A00EC4C4E /* Extensions.swift in Sources */,
+				C40588E220CE588200923AF0 /* NavSubview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
