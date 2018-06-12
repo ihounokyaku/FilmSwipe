@@ -19,6 +19,7 @@
 		C40A0A7420C9B8D000C3B930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40A0A7220C9B8D000C3B930 /* LaunchScreen.storyboard */; };
 		C471691920CA0FE100EDB26C /* SwipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C471691820CA0FE100EDB26C /* SwipeView.xib */; };
 		C471691B20CA104C00EDB26C /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471691A20CA104C00EDB26C /* SwipeView.swift */; };
+		C479625320CF426900753E73 /* Global Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479625220CF426900753E73 /* Global Variables.swift */; };
 		C4818EAE20CEAE9A00EC4C4E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4818EAD20CEAE9A00EC4C4E /* Extensions.swift */; };
 		C4BA56B320CDCEBD00BD39DA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA56B220CDCEBD00BD39DA /* Movie.swift */; };
 		C4BA56B920CDDE8D00BD39DA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA56B820CDDE8D00BD39DA /* Enums.swift */; };
@@ -42,6 +43,7 @@
 		C40A0A7520C9B8D000C3B930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C471691820CA0FE100EDB26C /* SwipeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeView.xib; sourceTree = "<group>"; };
 		C471691A20CA104C00EDB26C /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		C479625220CF426900753E73 /* Global Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global Variables.swift"; sourceTree = "<group>"; };
 		C4818EAD20CEAE9A00EC4C4E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C4BA56B220CDCEBD00BD39DA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C4BA56B820CDDE8D00BD39DA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				C4BA56B820CDDE8D00BD39DA /* Enums.swift */,
 				C4818EAD20CEAE9A00EC4C4E /* Extensions.swift */,
+				C479625220CF426900753E73 /* Global Variables.swift */,
 			);
 			path = "Global Variables";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				C4BA56B320CDCEBD00BD39DA /* Movie.swift in Sources */,
 				C4818EAE20CEAE9A00EC4C4E /* Extensions.swift in Sources */,
 				C40588E220CE588200923AF0 /* NavSubview.swift in Sources */,
+				C479625320CF426900753E73 /* Global Variables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
