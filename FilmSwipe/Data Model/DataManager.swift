@@ -23,25 +23,12 @@ class DataManager:NSObject {
     
     //MARK: - ========== CREATE ==========
     
-    //MARK: - ==Create New==
-    func newMovie(withID id:String, title:String, imageUrl:String, genres:[String], desc:String, rtScore:Int, imdbScore:Double) {
-        let movie = Movie()
-        movie.imageUrl = imageUrl
-        movie.title = title
-        movie.genres = genres.asList()
-        movie.desc = desc
-        movie.rtScore = rtScore
-        movie.imdbScore = imdbScore
-        movie.id = id
-        //TODO: - MAKE THUMBNAIL
-        self.save(object: movie)
-    }
-    
     //MARK: - ==Save==
-    func save(object:Object) {
+    func saveToFavorites(movie:Movie, thumbnail:UIImage) {
+        movie.thumbnail = thumbnail
         do {
             try self.realm.write {
-                realm.add(object)
+                realm.add(movie)
             }
         } catch {
             print("Error saving object \(error)")

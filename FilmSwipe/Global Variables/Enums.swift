@@ -8,10 +8,3 @@
 
 import Foundation
 
-
-enum Genre:String {
-    case dra = "Drama"
-    case my = "Mystery"
-    case sf = "Sci-Fi"
-}
-

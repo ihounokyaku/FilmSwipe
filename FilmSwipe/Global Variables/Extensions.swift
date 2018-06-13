@@ -22,7 +22,7 @@ extension Array where Element == String {
     }
 }
 
-//MARK: - ========Image Related Extensions ===========
+//MARK: - ========Image-Related Extensions ===========
 //MARK: - ==Image From String==
 extension String {
     func image () -> UIImage {
@@ -38,6 +38,16 @@ extension String {
             }
         }else {
             image = UIImage(named: "noImage.png")!
+        }
+        return image
+    }
+    
+    //MARK: - ==Image From Link==
+    func imageFromUrlPath()-> UIImage {
+        var image = #imageLiteral(resourceName: "noImage")
+        guard let url = URL(string:self) else {return image}
+        if let data = try? Data(contentsOf: url) {
+            image = UIImage(data: data) != nil ? UIImage(data: data)! : image
         }
         return image
     }
@@ -59,5 +69,21 @@ extension UIImage {
             let filename = DocumentsDirectory.appendingPathComponent(name + ".png")
             try? data.write(to: filename)
         }
+    }
+}
+
+//MARK: - ==========JSON PARSING===========
+//Extension to parse JSON
+extension String{
+    func toDictionary() -> NSDictionary {
+        let blankDict : NSDictionary = [:]
+        if let data = self.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as! NSDictionary
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return blankDict
     }
 }

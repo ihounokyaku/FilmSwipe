@@ -21,16 +21,26 @@ class ViewController: NavSubview {
     
     
     //MARK: - ==========VARIABLES===========
-
+    //MARK: - ==MANAGERS==
+    var queryManager = QueryManager()
 
     
     //MARK: - ==========SETUP===========
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: - ==DELEGATES and DATASOURCES
         self.kolodaView.delegate = self
         self.kolodaView.dataSource = self
         self.expandView.delegate = self
+        self.queryManager.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.queryManager.querySetup()
     }
 
 

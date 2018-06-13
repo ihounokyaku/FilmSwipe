@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class Movie : Object {
-    @objc dynamic var id = ""
+    @objc dynamic var id = 0
     @objc dynamic var title = "No Title"
     @objc dynamic var thumbnailName = "noImage.png"
     @objc dynamic var imageUrl = ""
